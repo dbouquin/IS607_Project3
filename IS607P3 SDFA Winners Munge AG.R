@@ -2,7 +2,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-sddat <- read.csv("C:/Users/Andrew/Documents/GitHub/IS607_Project3/data/SDFilmAwards.csv", strip.white = TRUE, header=TRUE, sep=",")
+sddat <- read.csv("SDFilmAwards.csv", strip.white = TRUE, header=TRUE, sep=",")
 sddat[,1:4] <- lapply(sddat[,1:4], trimws) #trim fore and aft white spaces (strip.white didn't work very well in read.csv)
 
 sddat
